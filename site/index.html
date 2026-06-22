@@ -9,7 +9,7 @@
 <meta property="og:title" content="OiB – Oldtimer in Büren a.A." />
 <meta property="og:description" content="Oldtimertreffen im historischen Stedtli von Büren an der Aare – 6. September 2026, 9–17 Uhr." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="assets/video/hero-poster.jpg" />
+<meta property="og:image" content="assets/video/hero-poster-v2.jpg" />
 <link rel="icon" type="image/png" href="assets/oib-logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -120,25 +120,6 @@ header.top .burger span{background:#fff}
 .ec-row b{display:block;font-size:.97rem;color:#fff}
 .ec-row span{font-size:.85rem;color:rgba(255,255,255,.72)}
 .event-card .btn{width:100%;justify-content:center;margin-top:1.6rem}
-
-/* VIDEO SECTION */
-.videosec{background:var(--green);color:#fff;position:relative;overflow:hidden}
-.videosec::before{content:"";position:absolute;top:-140px;left:-140px;width:420px;height:420px;background:radial-gradient(circle,rgba(193,154,62,.18),transparent 70%);border-radius:50%}
-.videosec .eyebrow{color:#f0dca6}
-.videosec .section-head h2{color:#fff}
-.videosec .section-head p{color:rgba(255,255,255,.78)}
-.video-frame{position:relative;max-width:1000px;margin:0 auto;border-radius:var(--radius);overflow:hidden;
-  box-shadow:0 30px 80px rgba(0,0,0,.5);border:1px solid rgba(193,154,62,.3);background:#000;aspect-ratio:16/9}
-.video-frame video{width:100%;height:100%;display:block;object-fit:cover}
-.video-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;
-  background:linear-gradient(180deg,rgba(20,36,29,.25),rgba(20,36,29,.55));transition:.3s;z-index:3}
-.video-play:hover{background:linear-gradient(180deg,rgba(20,36,29,.15),rgba(20,36,29,.45))}
-.video-play .pbtn{width:88px;height:88px;border-radius:50%;background:rgba(193,154,62,.92);display:flex;align-items:center;justify-content:center;
-  box-shadow:0 10px 40px rgba(0,0,0,.5);transition:.3s}
-.video-play:hover .pbtn{transform:scale(1.08);background:var(--brass)}
-.video-play .pbtn::after{content:"";margin-left:6px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #231c08}
-.video-play.hidden{display:none}
-.video-cap{text-align:center;margin-top:1.4rem;color:rgba(255,255,255,.6);font-size:.86rem;font-style:italic}
 
 /* HIGHLIGHTS icon grid (referenz "Kernleistungen") */
 .highlights{background:var(--cream-2)}
@@ -262,7 +243,6 @@ footer p{font-size:.92rem;max-width:330px}
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#treffen">Das Treffen</a></li>
-      <li><a href="#video">Video</a></li>
       <li><a href="#ok">Organisation</a></li>
       <li><a href="#verein">Verein</a></li>
       <li><a href="#galerie">Galerie</a></li>
@@ -274,9 +254,9 @@ footer p{font-size:.92rem;max-width:330px}
 
 <!-- HERO -->
 <section class="hero" id="start">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster.jpg">
-    <source src="assets/video/hero-loop.webm" type="video/webm" />
-    <source src="assets/video/hero-loop.mp4" type="video/mp4" />
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster-v2.jpg">
+    <source src="assets/video/hero-loop-v2.webm" type="video/webm" />
+    <source src="assets/video/hero-loop-v2.mp4" type="video/mp4" />
   </video>
   <div class="wrap hero-inner">
     <span class="hero-badge">Nächster Anlass · 6. September 2026</span>
@@ -284,7 +264,7 @@ footer p{font-size:.92rem;max-width:330px}
     <p class="hero-lead">Das jährliche Oldtimertreffen im malerischen, historischen Stedtli an der Aare – ein entspannter Tag voller Nostalgie und automobilem Charme.</p>
     <div class="hero-cta">
       <a href="#kontakt" class="btn btn-primary">Anmeldung 2026</a>
-      <a href="#video" class="btn btn-ghost">▶ Film ansehen</a>
+      <a href="#treffen" class="btn btn-ghost">Mehr erfahren</a>
     </div>
   </div>
   <div class="scroll-ind"><div class="dot"></div><span>Scrollen</span></div>
@@ -327,24 +307,6 @@ footer p{font-size:.92rem;max-width:330px}
         <a href="#kontakt" class="btn btn-primary">Jetzt anmelden</a>
       </aside>
     </div>
-  </div>
-</section>
-
-<!-- VIDEO -->
-<section class="section videosec" id="video">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Impressionen vom Treffen</span>
-      <h2>Das OiB in Bewegung</h2>
-      <p>Stimmungsvolle Eindrücke vom Oldtimertreffen im historischen Stedtli – Fahrzeuge, Atmosphäre und das Flair von Büren an der Aare.</p>
-    </div>
-    <div class="video-frame reveal">
-      <video id="reel" preload="none" playsinline controls poster="assets/video/reel-poster.jpg">
-        <source src="assets/video/highlight-reel.mp4" type="video/mp4" />
-      </video>
-      <div class="video-play" id="videoPlay"><div class="pbtn"></div></div>
-    </div>
-    <p class="video-cap">Aufnahmen vom OiB – Oldtimer in Büren a.A.</p>
   </div>
 </section>
 
@@ -475,7 +437,6 @@ footer p{font-size:.92rem;max-width:330px}
       <div class="foot-col">
         <h4>Navigation</h4>
         <a href="#treffen">Das Treffen</a>
-        <a href="#video">Video</a>
         <a href="#ok">Organisation</a>
         <a href="#verein">Der Verein</a>
         <a href="#galerie">Galerie</a>
@@ -523,12 +484,6 @@ const io = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
 }, {threshold:0.12});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-// highlight reel play
-const reel = document.getElementById('reel'), videoPlay = document.getElementById('videoPlay');
-videoPlay.addEventListener('click', () => { videoPlay.classList.add('hidden'); reel.play(); });
-reel.addEventListener('pause', () => { if(!reel.ended) videoPlay.classList.remove('hidden'); });
-reel.addEventListener('play', () => videoPlay.classList.add('hidden'));
 
 // lightbox
 const items = [...document.querySelectorAll('.gal-item')];
