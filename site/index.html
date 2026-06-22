@@ -9,48 +9,52 @@
 <meta property="og:title" content="OiB – Oldtimer in Büren a.A." />
 <meta property="og:description" content="Oldtimertreffen im historischen Stedtli von Büren an der Aare – 6. September 2026, 9–17 Uhr." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="assets/video/hero-poster-v2.jpg" />
+<meta property="og:image" content="assets/video/hero-poster-v3.jpg" />
 <link rel="icon" type="image/png" href="assets/oib-logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --green:#14241d;        /* near-black racing green */
-  --green-2:#1c3a30;
-  --green-3:#264f41;
-  --brass:#c19a3e;
-  --brass-2:#a87f2c;
-  --cream:#f7f3ea;        /* warm editorial paper */
-  --cream-2:#efe8d8;
-  --ink:#23211a;
-  --ink-soft:#5c5647;
-  --line:#e3d9c4;
-  --white:#fffdf9;
-  --shadow:0 24px 60px rgba(20,36,29,.16);
-  --shadow-sm:0 10px 28px rgba(20,36,29,.10);
-  --radius:14px;
+  --green:#223d30;        /* tiefes Flaschengrün, warm */
+  --green-2:#2c4d3d;
+  --green-3:#3a6450;
+  --brass:#b6863f;        /* gealtertes Cognac-Gold */
+  --brass-2:#8f6526;
+  --rust:#9d4a2c;         /* Oxblood / Rost-Akzent */
+  --cream:#f2e8d4;        /* gealtertes Papier */
+  --cream-2:#eaddc2;
+  --ink:#322715;          /* warmes Espresso-Braun */
+  --ink-soft:#6c5d43;
+  --line:#dcc9a6;
+  --white:#fbf5e8;        /* cremiges Weiss */
+  --shadow:0 24px 60px rgba(50,39,21,.18);
+  --shadow-sm:0 10px 28px rgba(50,39,21,.12);
+  --radius:10px;
   --maxw:1220px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-  color:var(--ink);background:var(--cream);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.12;color:var(--green);font-weight:700}
+body{font-family:'EB Garamond',Georgia,'Times New Roman',serif;font-size:1.08rem;
+  color:var(--ink);background:var(--cream);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:radial-gradient(rgba(120,90,40,.05) 1px,transparent 1px);background-size:4px 4px}
+h1,h2,h3,h4{font-family:'DM Serif Display',Georgia,serif;line-height:1.14;color:var(--green);font-weight:400}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{width:min(var(--maxw),92vw);margin-inline:auto}
-.eyebrow{display:inline-block;font-family:'Inter';font-weight:600;letter-spacing:.28em;
-  text-transform:uppercase;font-size:.72rem;color:var(--brass-2);margin-bottom:1.1rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.34em;
+  text-transform:uppercase;font-size:.74rem;color:var(--rust);margin-bottom:1.1rem}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:var(--brass);opacity:.7}
+.section-head.left .eyebrow::before{display:none}
 .section{padding:clamp(4rem,8vw,7.5rem) 0}
 .section-head{max-width:760px;margin:0 auto 3.4rem;text-align:center}
 .section-head.left{margin-inline:0;text-align:left}
-.section-head h2{font-size:clamp(2rem,4.4vw,3.3rem);margin-bottom:1rem;font-weight:700}
-.section-head p{color:var(--ink-soft);font-size:1.1rem}
-.lead{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;line-height:1.5;color:var(--green-2);font-weight:500}
-.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;font-size:.9rem;letter-spacing:.04em;
-  text-transform:uppercase;padding:1rem 2rem;border-radius:50px;cursor:pointer;border:1.5px solid transparent;transition:.28s ease}
-.btn-primary{background:var(--brass);color:#231c08;box-shadow:0 10px 26px rgba(193,154,62,.35)}
+.section-head h2{font-size:clamp(2.1rem,4.6vw,3.4rem);margin-bottom:1rem;font-weight:400}
+.section-head p{color:var(--ink-soft);font-size:1.16rem}
+.lead{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:1.6rem;line-height:1.5;color:var(--green-2);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.92rem;letter-spacing:.1em;
+  text-transform:uppercase;padding:.95rem 2rem;border-radius:50px;cursor:pointer;border:1.5px solid transparent;transition:.28s ease}
+.btn-primary{background:var(--brass);color:#2b1d05;box-shadow:0 10px 26px rgba(182,134,63,.34)}
 .btn-primary:hover{background:var(--brass-2);transform:translateY(-2px)}
 .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
@@ -62,39 +66,39 @@ img{max-width:100%;display:block}
 /* HEADER */
 header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.34s ease}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
-.navbar-bg{background:rgba(247,243,234,.94);backdrop-filter:blur(14px);box-shadow:0 2px 22px rgba(20,36,29,.10)}
-.brand{display:flex;align-items:center;gap:.75rem;font-family:'Playfair Display';font-weight:800;font-size:1.2rem;color:var(--green)}
+.navbar-bg{background:rgba(242,232,212,.95);backdrop-filter:blur(14px);box-shadow:0 2px 22px rgba(50,39,21,.12);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.75rem;font-family:'DM Serif Display';font-weight:400;font-size:1.32rem;color:var(--green);letter-spacing:.02em}
 .brand img{height:48px;width:auto;filter:drop-shadow(0 2px 3px rgba(0,0,0,.15))}
-.brand .sub{display:block;font-family:'Inter';font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-2);margin-top:2px}
-header.top .brand,header.top .nav-links>li>a{color:#fff}
-header.top .brand .sub{color:#f0dca6}
+.brand .sub{display:block;font-family:'Oswald';font-weight:500;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--brass-2);margin-top:2px}
+header.top .brand,header.top .nav-links>li>a{color:#fbf5e8}
+header.top .brand .sub{color:#e8cf9a}
 header.top .brand img{filter:brightness(0) invert(1) drop-shadow(0 2px 6px rgba(0,0,0,.5))}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
-.nav-links a{font-weight:500;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;position:relative;padding:.3rem 0;transition:.2s}
+.nav-links a{font-family:'Oswald',sans-serif;font-weight:500;font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;position:relative;padding:.3rem 0;transition:.2s}
 .nav-links a:not(.nav-cta)::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:1.5px;background:var(--brass);transition:.25s}
 .nav-links a:not(.nav-cta):hover::after{width:100%}
-.nav-links .nav-cta{padding:.6rem 1.4rem;border-radius:50px;background:var(--brass);color:#231c08!important;font-weight:600}
+.nav-links .nav-cta{padding:.55rem 1.4rem;border-radius:50px;background:var(--brass);color:#2b1d05!important;font-weight:600}
 .nav-links .nav-cta:hover{background:var(--brass-2)}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0;padding:6px;z-index:101}
 .burger span{width:26px;height:2.5px;background:var(--green);border-radius:2px;transition:.3s}
-header.top .burger span{background:#fff}
+header.top .burger span{background:#fbf5e8}
 
 /* HERO with video bg */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:120px 0 90px}
 .hero-video{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(20,36,29,.62) 0%,rgba(20,36,29,.42) 40%,rgba(20,36,29,.82) 100%)}
+  background:linear-gradient(180deg,rgba(40,28,12,.58) 0%,rgba(45,32,15,.34) 42%,rgba(34,24,10,.84) 100%)}
 .hero-inner{text-align:center;max-width:920px;margin:0 auto}
-.hero-badge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(193,154,62,.16);
-  border:1px solid rgba(193,154,62,.5);color:#f3dfa8;padding:.5rem 1.2rem;border-radius:50px;
-  font-weight:600;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.8rem;backdrop-filter:blur(4px)}
-.hero h1{color:#fff;font-size:clamp(2.6rem,7vw,5.4rem);font-weight:800;letter-spacing:-.01em;text-shadow:0 6px 40px rgba(0,0,0,.45);line-height:1.05}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(182,134,63,.18);
+  border:1px solid rgba(182,134,63,.55);color:#f0dca6;padding:.5rem 1.3rem;border-radius:50px;
+  font-family:'Oswald',sans-serif;font-weight:500;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.8rem;backdrop-filter:blur(4px)}
+.hero h1{color:#fbf5e8;font-size:clamp(2.7rem,7.4vw,5.6rem);font-weight:400;letter-spacing:.005em;text-shadow:0 6px 40px rgba(0,0,0,.5);line-height:1.04}
 .hero h1 .accent{color:var(--brass);font-style:italic}
-.hero-lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.6vw,1.85rem);font-weight:500;
-  margin:1.6rem auto 2.4rem;color:rgba(255,255,255,.94);max-width:660px;line-height:1.45}
+.hero-lead{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(1.35rem,2.6vw,1.9rem);font-weight:500;
+  margin:1.6rem auto 2.4rem;color:rgba(251,245,232,.95);max-width:660px;line-height:1.45}
 .hero-cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
-.scroll-ind{position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);
-  font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.scroll-ind{position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);color:rgba(251,245,232,.7);
+  font-family:'Oswald',sans-serif;font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.5rem}
 .scroll-ind .dot{width:22px;height:36px;border:1.5px solid rgba(255,255,255,.5);border-radius:14px;position:relative}
 .scroll-ind .dot::after{content:"";position:absolute;left:50%;top:7px;transform:translateX(-50%);width:3px;height:7px;background:#fff;border-radius:2px;animation:scrolld 1.6s infinite}
 @keyframes scrolld{0%{opacity:0;top:7px}40%{opacity:1}80%{opacity:0;top:18px}}
@@ -104,7 +108,7 @@ header.top .burger span{background:#fff}
 .strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:1rem;padding:1.5rem 0}
 .strip-item{display:flex;align-items:center;gap:.85rem}
 .strip-item .ico{font-size:1.6rem}
-.strip-item b{display:block;font-family:'Playfair Display';font-size:1.05rem;color:#fff;line-height:1.15}
+.strip-item b{display:block;font-family:'DM Serif Display';font-size:1.05rem;color:#fff;line-height:1.15}
 .strip-item span{font-size:.82rem;color:rgba(255,255,255,.66)}
 
 /* INTRO */
@@ -135,10 +139,10 @@ header.top .burger span{background:#fff}
 .member{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem;box-shadow:var(--shadow-sm);transition:.25s;position:relative;overflow:hidden}
 .member::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--brass)}
 .member:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.member .role{font-family:'Inter';font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-2);margin-bottom:.4rem}
+.member .role{font-family:'Oswald';font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-2);margin-bottom:.4rem}
 .member h3{font-size:1.4rem;margin-bottom:1rem}
 .member .field{font-size:.9rem;margin-bottom:.55rem;color:var(--ink-soft)}
-.member .field b{color:var(--green);font-family:'Inter';font-weight:600;display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.15rem}
+.member .field b{color:var(--green);font-family:'Oswald';font-weight:600;display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.15rem}
 .member .hobbies{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin-top:.9rem;padding-top:.9rem;border-top:1px dashed var(--line)}
 
 /* VEREIN */
@@ -146,19 +150,19 @@ header.top .burger span{background:#fff}
 .verein-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.4rem;align-items:center}
 .verein-text p{color:var(--ink-soft);font-size:1.08rem}
 .board{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
-.board-head{background:var(--green);color:#fff;padding:1.2rem 1.7rem;font-family:'Playfair Display';font-weight:700;font-size:1.2rem;display:flex;align-items:center;gap:.6rem}
+.board-head{background:var(--green);color:#fff;padding:1.2rem 1.7rem;font-family:'DM Serif Display';font-weight:700;font-size:1.2rem;display:flex;align-items:center;gap:.6rem}
 .board ul{list-style:none}
 .board li{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.7rem;border-bottom:1px solid var(--line)}
 .board li:last-child{border-bottom:0}
 .board li .pos{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brass-2)}
-.board li .nm{font-family:'Playfair Display';font-weight:600;font-size:1.12rem;color:var(--green)}
+.board li .nm{font-family:'DM Serif Display';font-weight:600;font-size:1.12rem;color:var(--green)}
 
 /* GALLERY */
 .gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.4rem}
 .gal-item{position:relative;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);cursor:pointer;background:#fff;border:1px solid var(--line);aspect-ratio:3/4}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:.4s}
 .gal-item:hover img{transform:scale(1.06)}
-.gal-item .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(20,36,29,.92),transparent);color:#fff;padding:1.5rem .9rem .75rem;font-family:'Playfair Display';font-weight:600;font-size:1.08rem;display:flex;justify-content:space-between;align-items:center}
+.gal-item .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(20,36,29,.92),transparent);color:#fff;padding:1.5rem .9rem .75rem;font-family:'DM Serif Display';font-weight:600;font-size:1.08rem;display:flex;justify-content:space-between;align-items:center}
 .gal-item .cap .zoom{font-size:.9rem;opacity:.8}
 .lb{position:fixed;inset:0;z-index:200;background:rgba(12,22,18,.95);display:none;align-items:center;justify-content:center;padding:2rem;backdrop-filter:blur(6px)}
 .lb.open{display:flex}
@@ -202,7 +206,7 @@ footer{background:#0f1c16;color:rgba(255,255,255,.7);padding:3.4rem 0 1.6rem}
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.6rem;margin-bottom:2.4rem}
 .foot-brand{display:flex;align-items:center;gap:.85rem;margin-bottom:1.1rem}
 .foot-brand img{height:56px;filter:brightness(0) invert(1);opacity:.9}
-.foot-brand .ft{font-family:'Playfair Display';font-weight:700;font-size:1.25rem;color:#fff}
+.foot-brand .ft{font-family:'DM Serif Display';font-weight:700;font-size:1.25rem;color:#fff}
 .foot-brand .fs{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#f0dca6}
 footer p{font-size:.92rem;max-width:330px}
 .foot-col h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.1rem}
@@ -254,9 +258,9 @@ footer p{font-size:.92rem;max-width:330px}
 
 <!-- HERO -->
 <section class="hero" id="start">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster-v2.jpg">
-    <source src="assets/video/hero-loop-v2.webm" type="video/webm" />
-    <source src="assets/video/hero-loop-v2.mp4" type="video/mp4" />
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster-v3.jpg">
+    <source src="assets/video/hero-loop-v3.webm" type="video/webm" />
+    <source src="assets/video/hero-loop-v3.mp4" type="video/mp4" />
   </video>
   <div class="wrap hero-inner">
     <span class="hero-badge">Nächster Anlass · 6. September 2026</span>
