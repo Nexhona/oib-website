@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OiB – Oldtimer in Büren a.A. | Oldtimertreffen 6. September 2026</title>
+<meta name="description" content="OiB – Oldtimer in Büren an der Aare. Das jährliche Oldtimertreffen im historischen Stedtli. Nächster Anlass: 6. September 2026, 9–17 Uhr. Anmeldung & Infos." />
+<meta name="theme-color" content="#14241d" />
+<meta property="og:title" content="OiB – Oldtimer in Büren a.A." />
+<meta property="og:description" content="Oldtimertreffen im historischen Stedtli von Büren an der Aare – 6. September 2026, 9–17 Uhr." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/video/hero-poster.jpg" />
+<link rel="icon" type="image/png" href="assets/oib-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --green:#14241d;        /* near-black racing green */
+  --green-2:#1c3a30;
+  --green-3:#264f41;
+  --brass:#c19a3e;
+  --brass-2:#a87f2c;
+  --cream:#f7f3ea;        /* warm editorial paper */
+  --cream-2:#efe8d8;
+  --ink:#23211a;
+  --ink-soft:#5c5647;
+  --line:#e3d9c4;
+  --white:#fffdf9;
+  --shadow:0 24px 60px rgba(20,36,29,.16);
+  --shadow-sm:0 10px 28px rgba(20,36,29,.10);
+  --radius:14px;
+  --maxw:1220px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:var(--ink);background:var(--cream);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.12;color:var(--green);font-weight:700}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--maxw),92vw);margin-inline:auto}
+.eyebrow{display:inline-block;font-family:'Inter';font-weight:600;letter-spacing:.28em;
+  text-transform:uppercase;font-size:.72rem;color:var(--brass-2);margin-bottom:1.1rem}
+.section{padding:clamp(4rem,8vw,7.5rem) 0}
+.section-head{max-width:760px;margin:0 auto 3.4rem;text-align:center}
+.section-head.left{margin-inline:0;text-align:left}
+.section-head h2{font-size:clamp(2rem,4.4vw,3.3rem);margin-bottom:1rem;font-weight:700}
+.section-head p{color:var(--ink-soft);font-size:1.1rem}
+.lead{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;line-height:1.5;color:var(--green-2);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;font-size:.9rem;letter-spacing:.04em;
+  text-transform:uppercase;padding:1rem 2rem;border-radius:50px;cursor:pointer;border:1.5px solid transparent;transition:.28s ease}
+.btn-primary{background:var(--brass);color:#231c08;box-shadow:0 10px 26px rgba(193,154,62,.35)}
+.btn-primary:hover{background:var(--brass-2);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-dark{background:var(--green);color:#fff}
+.btn-dark:hover{background:var(--green-2);transform:translateY(-2px)}
+.btn-outline{border-color:var(--green);color:var(--green)}
+.btn-outline:hover{background:var(--green);color:#fff}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.34s ease}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+.navbar-bg{background:rgba(247,243,234,.94);backdrop-filter:blur(14px);box-shadow:0 2px 22px rgba(20,36,29,.10)}
+.brand{display:flex;align-items:center;gap:.75rem;font-family:'Playfair Display';font-weight:800;font-size:1.2rem;color:var(--green)}
+.brand img{height:48px;width:auto;filter:drop-shadow(0 2px 3px rgba(0,0,0,.15))}
+.brand .sub{display:block;font-family:'Inter';font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-2);margin-top:2px}
+header.top .brand,header.top .nav-links>li>a{color:#fff}
+header.top .brand .sub{color:#f0dca6}
+header.top .brand img{filter:brightness(0) invert(1) drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-weight:500;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;position:relative;padding:.3rem 0;transition:.2s}
+.nav-links a:not(.nav-cta)::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:1.5px;background:var(--brass);transition:.25s}
+.nav-links a:not(.nav-cta):hover::after{width:100%}
+.nav-links .nav-cta{padding:.6rem 1.4rem;border-radius:50px;background:var(--brass);color:#231c08!important;font-weight:600}
+.nav-links .nav-cta:hover{background:var(--brass-2)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0;padding:6px;z-index:101}
+.burger span{width:26px;height:2.5px;background:var(--green);border-radius:2px;transition:.3s}
+header.top .burger span{background:#fff}
+
+/* HERO with video bg */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:120px 0 90px}
+.hero-video{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(20,36,29,.62) 0%,rgba(20,36,29,.42) 40%,rgba(20,36,29,.82) 100%)}
+.hero-inner{text-align:center;max-width:920px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(193,154,62,.16);
+  border:1px solid rgba(193,154,62,.5);color:#f3dfa8;padding:.5rem 1.2rem;border-radius:50px;
+  font-weight:600;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.8rem;backdrop-filter:blur(4px)}
+.hero h1{color:#fff;font-size:clamp(2.6rem,7vw,5.4rem);font-weight:800;letter-spacing:-.01em;text-shadow:0 6px 40px rgba(0,0,0,.45);line-height:1.05}
+.hero h1 .accent{color:var(--brass);font-style:italic}
+.hero-lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.6vw,1.85rem);font-weight:500;
+  margin:1.6rem auto 2.4rem;color:rgba(255,255,255,.94);max-width:660px;line-height:1.45}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.scroll-ind{position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);
+  font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.scroll-ind .dot{width:22px;height:36px;border:1.5px solid rgba(255,255,255,.5);border-radius:14px;position:relative}
+.scroll-ind .dot::after{content:"";position:absolute;left:50%;top:7px;transform:translateX(-50%);width:3px;height:7px;background:#fff;border-radius:2px;animation:scrolld 1.6s infinite}
+@keyframes scrolld{0%{opacity:0;top:7px}40%{opacity:1}80%{opacity:0;top:18px}}
+
+/* MARQUEE strip */
+.strip{background:var(--green);color:rgba(255,255,255,.92);border-block:1px solid var(--green-3)}
+.strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:1rem;padding:1.5rem 0}
+.strip-item{display:flex;align-items:center;gap:.85rem}
+.strip-item .ico{font-size:1.6rem}
+.strip-item b{display:block;font-family:'Playfair Display';font-size:1.05rem;color:#fff;line-height:1.15}
+.strip-item span{font-size:.82rem;color:rgba(255,255,255,.66)}
+
+/* INTRO */
+.intro-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:3.4rem;align-items:start}
+.intro-text p{margin-bottom:1.2rem;color:var(--ink-soft);font-size:1.07rem}
+.intro-text p strong{color:var(--ink)}
+.intro-text .lead{margin-bottom:1.8rem}
+.event-card{background:var(--green);color:#fff;border-radius:var(--radius);padding:2.2rem 2rem;box-shadow:var(--shadow);position:sticky;top:100px}
+.event-card h3{color:#fff;font-size:1.6rem;margin-bottom:.25rem}
+.event-card .ec-sub{color:#f0dca6;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.5rem}
+.ec-row{display:flex;gap:1rem;align-items:flex-start;padding:.95rem 0;border-top:1px solid rgba(255,255,255,.13)}
+.ec-row .ico{font-size:1.3rem;flex-shrink:0;width:26px;text-align:center}
+.ec-row b{display:block;font-size:.97rem;color:#fff}
+.ec-row span{font-size:.85rem;color:rgba(255,255,255,.72)}
+.event-card .btn{width:100%;justify-content:center;margin-top:1.6rem}
+
+/* VIDEO SECTION */
+.videosec{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.videosec::before{content:"";position:absolute;top:-140px;left:-140px;width:420px;height:420px;background:radial-gradient(circle,rgba(193,154,62,.18),transparent 70%);border-radius:50%}
+.videosec .eyebrow{color:#f0dca6}
+.videosec .section-head h2{color:#fff}
+.videosec .section-head p{color:rgba(255,255,255,.78)}
+.video-frame{position:relative;max-width:1000px;margin:0 auto;border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.5);border:1px solid rgba(193,154,62,.3);background:#000;aspect-ratio:16/9}
+.video-frame video{width:100%;height:100%;display:block;object-fit:cover}
+.video-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:linear-gradient(180deg,rgba(20,36,29,.25),rgba(20,36,29,.55));transition:.3s;z-index:3}
+.video-play:hover{background:linear-gradient(180deg,rgba(20,36,29,.15),rgba(20,36,29,.45))}
+.video-play .pbtn{width:88px;height:88px;border-radius:50%;background:rgba(193,154,62,.92);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5);transition:.3s}
+.video-play:hover .pbtn{transform:scale(1.08);background:var(--brass)}
+.video-play .pbtn::after{content:"";margin-left:6px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #231c08}
+.video-play.hidden{display:none}
+.video-cap{text-align:center;margin-top:1.4rem;color:rgba(255,255,255,.6);font-size:.86rem;font-style:italic}
+
+/* HIGHLIGHTS icon grid (referenz "Kernleistungen") */
+.highlights{background:var(--cream-2)}
+.hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.hl-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2.2rem 1.8rem;text-align:center;transition:.28s;box-shadow:var(--shadow-sm)}
+.hl-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.hl-card .ico{font-size:2.4rem;margin-bottom:1rem;display:block}
+.hl-card h3{font-size:1.3rem;margin-bottom:.6rem}
+.hl-card p{font-size:.95rem;color:var(--ink-soft)}
+
+/* OK TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
+.member{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem;box-shadow:var(--shadow-sm);transition:.25s;position:relative;overflow:hidden}
+.member::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--brass)}
+.member:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.member .role{font-family:'Inter';font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-2);margin-bottom:.4rem}
+.member h3{font-size:1.4rem;margin-bottom:1rem}
+.member .field{font-size:.9rem;margin-bottom:.55rem;color:var(--ink-soft)}
+.member .field b{color:var(--green);font-family:'Inter';font-weight:600;display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.15rem}
+.member .hobbies{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin-top:.9rem;padding-top:.9rem;border-top:1px dashed var(--line)}
+
+/* VEREIN */
+.verein{background:var(--cream-2)}
+.verein-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.4rem;align-items:center}
+.verein-text p{color:var(--ink-soft);font-size:1.08rem}
+.board{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+.board-head{background:var(--green);color:#fff;padding:1.2rem 1.7rem;font-family:'Playfair Display';font-weight:700;font-size:1.2rem;display:flex;align-items:center;gap:.6rem}
+.board ul{list-style:none}
+.board li{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.7rem;border-bottom:1px solid var(--line)}
+.board li:last-child{border-bottom:0}
+.board li .pos{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brass-2)}
+.board li .nm{font-family:'Playfair Display';font-weight:600;font-size:1.12rem;color:var(--green)}
+
+/* GALLERY */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.4rem}
+.gal-item{position:relative;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);cursor:pointer;background:#fff;border:1px solid var(--line);aspect-ratio:3/4}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-item .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(20,36,29,.92),transparent);color:#fff;padding:1.5rem .9rem .75rem;font-family:'Playfair Display';font-weight:600;font-size:1.08rem;display:flex;justify-content:space-between;align-items:center}
+.gal-item .cap .zoom{font-size:.9rem;opacity:.8}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(12,22,18,.95);display:none;align-items:center;justify-content:center;padding:2rem;backdrop-filter:blur(6px)}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:88vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb-close{position:absolute;top:1.5rem;right:2rem;color:#fff;font-size:2.4rem;cursor:pointer;line-height:1;background:none;border:0}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:2.6rem;cursor:pointer;background:rgba(255,255,255,.1);border:0;width:54px;height:54px;border-radius:50%;transition:.2s}
+.lb-nav:hover{background:rgba(193,154,62,.6)}
+.lb-prev{left:1.5rem}.lb-next{right:1.5rem}
+
+/* CONTACT */
+.contact{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;top:-120px;right:-120px;width:400px;height:400px;background:radial-gradient(circle,rgba(193,154,62,.2),transparent 70%);border-radius:50%}
+.contact .eyebrow{color:#f0dca6}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.4rem;align-items:start;position:relative}
+.contact-info h2{color:#fff;font-size:clamp(2rem,4vw,3rem);margin-bottom:1.1rem}
+.contact-info>p{color:rgba(255,255,255,.82);font-size:1.08rem;margin-bottom:2.2rem}
+.ci-row{display:flex;gap:1rem;align-items:center;margin-bottom:1.4rem}
+.ci-row .ico{width:48px;height:48px;flex-shrink:0;border-radius:12px;background:rgba(193,154,62,.16);border:1px solid rgba(193,154,62,.4);display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.ci-row b{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:#f0dca6}
+.ci-row a,.ci-row span{color:#fff;font-size:1.03rem}
+.ci-social{display:flex;gap:.8rem;margin-top:2rem}
+.ci-social a{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;transition:.25s;color:#fff;font-weight:600;font-size:.8rem}
+.ci-social a:hover{background:var(--brass);color:#231c08;transform:translateY(-3px)}
+.form-card{background:var(--white);border-radius:var(--radius);padding:2.4rem;box-shadow:var(--shadow);color:var(--ink)}
+.form-card h3{font-size:1.5rem;margin-bottom:.4rem}
+.form-card .fc-sub{color:var(--ink-soft);font-size:.92rem;margin-bottom:1.8rem}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{margin-bottom:1.2rem}
+.fg label{display:block;font-weight:600;font-size:.84rem;margin-bottom:.4rem;color:var(--green)}
+.fg input,.fg textarea{width:100%;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:.96rem;background:var(--cream);color:var(--ink);transition:.2s}
+.fg input:focus,.fg textarea:focus{outline:none;border-color:var(--brass);background:#fff;box-shadow:0 0 0 3px rgba(193,154,62,.15)}
+.fg textarea{resize:vertical;min-height:120px}
+.cf-hp{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden}
+.form-card .btn{width:100%;justify-content:center;margin-top:.4rem}
+.form-status{margin-top:1rem;padding:.9rem 1rem;border-radius:10px;font-size:.92rem;display:none}
+.form-status.ok{display:block;background:#e7f3ec;color:#1c6b3f;border:1px solid #b5dcc4}
+.form-status.err{display:block;background:#fbeaea;color:#9c2a2a;border:1px solid #e6bcbc}
+
+/* FOOTER */
+footer{background:#0f1c16;color:rgba(255,255,255,.7);padding:3.4rem 0 1.6rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.6rem;margin-bottom:2.4rem}
+.foot-brand{display:flex;align-items:center;gap:.85rem;margin-bottom:1.1rem}
+.foot-brand img{height:56px;filter:brightness(0) invert(1);opacity:.9}
+.foot-brand .ft{font-family:'Playfair Display';font-weight:700;font-size:1.25rem;color:#fff}
+.foot-brand .fs{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#f0dca6}
+footer p{font-size:.92rem;max-width:330px}
+.foot-col h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.1rem}
+.foot-col a{display:block;color:rgba(255,255,255,.65);font-size:.92rem;margin-bottom:.65rem;transition:.2s}
+.foot-col a:hover{color:var(--brass)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;font-size:.82rem;color:rgba(255,255,255,.5)}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+.foot-bottom a:hover{color:var(--brass)}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:880px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(310px,82vw);flex-direction:column;align-items:flex-start;gap:1.5rem;background:var(--green);padding:6rem 2rem 2rem;transform:translateX(100%);transition:.35s ease;box-shadow:-10px 0 40px rgba(0,0,0,.3)}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links>li>a{color:#fff!important;font-size:1rem}
+  .burger{display:flex}
+  .burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);background:#fff}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);background:#fff}
+  .intro-grid,.verein-grid,.contact-grid{grid-template-columns:1fr;gap:2.2rem}
+  .event-card{position:static}
+  .hl-grid{grid-template-columns:1fr}
+  .board{order:-1}
+  .foot-grid{grid-template-columns:1fr;gap:1.8rem}
+  .field-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="header" class="top">
+  <div class="wrap nav">
+    <a href="#start" class="brand">
+      <img src="assets/oib-logo.png" alt="OiB Logo" />
+      <span>OiB<span class="sub">Büren a.&nbsp;A.</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#treffen">Das Treffen</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#ok">Organisation</a></li>
+      <li><a href="#verein">Verein</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#kontakt" class="nav-cta">Anmelden</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="start">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster.jpg">
+    <source src="assets/video/hero-loop.webm" type="video/webm" />
+    <source src="assets/video/hero-loop.mp4" type="video/mp4" />
+  </video>
+  <div class="wrap hero-inner">
+    <span class="hero-badge">Nächster Anlass · 6. September 2026</span>
+    <h1>Oldtimer in <span class="accent">Büren&nbsp;a.A.</span></h1>
+    <p class="hero-lead">Das jährliche Oldtimertreffen im malerischen, historischen Stedtli an der Aare – ein entspannter Tag voller Nostalgie und automobilem Charme.</p>
+    <div class="hero-cta">
+      <a href="#kontakt" class="btn btn-primary">Anmeldung 2026</a>
+      <a href="#video" class="btn btn-ghost">▶ Film ansehen</a>
+    </div>
+  </div>
+  <div class="scroll-ind"><div class="dot"></div><span>Scrollen</span></div>
+</section>
+
+<!-- FACTS STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-item"><span class="ico">📅</span><div><b>6. September 2026</b><span>9 – 17 Uhr</span></div></div>
+    <div class="strip-item"><span class="ico">📍</span><div><b>Stedtli Büren a.A.</b><span>Historisches Zentrum</span></div></div>
+    <div class="strip-item"><span class="ico">🚗</span><div><b>Alle Epochen</b><span>Limousinen bis Töff</span></div></div>
+    <div class="strip-item"><span class="ico">🎪</span><div><b>Festwirtschaft</b><span>& Kinderkarussell</span></div></div>
+  </div>
+</div>
+
+<!-- TREFFEN -->
+<section class="section" id="treffen">
+  <div class="wrap">
+    <div class="section-head left reveal">
+      <span class="eyebrow">Willkommen</span>
+      <h2>Nächstes OiB – Oldtimer in Büren a.&nbsp;A.</h2>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p class="lead">Unser jährliches Treffen findet am 6. September 2026 von 9 bis 17 Uhr statt und richtet sich an alle, die Freude an historischen Fahrzeugen haben.</p>
+        <p>Es bietet eine schöne Gelegenheit, sich zu treffen, auszutauschen und die eigenen Fahrzeuge der Öffentlichkeit zu präsentieren.</p>
+        <p>Das Oldtimertreffen findet im malerischen historischen Stadtzentrum von Büren an der Aare statt und lockt jedes Jahr zahlreiche Besucher aus der Region an. Man kommt ins Gespräch, lernt neue Leute kennen und kann die <strong>Vielfalt und Eleganz der Fahrzeuge</strong> aus nächster Nähe erleben.</p>
+        <p>Ob Sie selbst einen Oldtimer besitzen oder sich einfach für klassische Fahrzeuge interessieren – ein Besuch lohnt sich auf jeden Fall. Im Ausstellungsbereich gibt es Fahrzeuge aus verschiedenen Epochen zu sehen. Von klassischen Limousinen über Sportwagen bis hin zu Motorrädern ist alles dabei.</p>
+        <p>Auch für das leibliche Wohl ist gesorgt. Vor Ort gibt es verschiedene Verpflegungsmöglichkeiten mit regionalen Angeboten und Getränken. Und auch für die Kinder ist gesorgt – ein Karussell sorgt für zusätzlichen Spaß.</p>
+        <p><strong>Wir laden Sie herzlich ein</strong>, dabei zu sein und einen entspannten Tag mit viel Nostalgie und automobilem Charme zu verbringen. Wir freuen uns auf Ihren Besuch im schönen Städtchen Büren an der Aare!</p>
+      </div>
+      <aside class="event-card reveal">
+        <h3>Das Treffen 2026</h3>
+        <p class="ec-sub">Auf einen Blick</p>
+        <div class="ec-row"><span class="ico">📅</span><div><b>Samstag, 6. September 2026</b><span>09:00 – 17:00 Uhr</span></div></div>
+        <div class="ec-row"><span class="ico">📍</span><div><b>Historisches Stedtli</b><span>Büren an der Aare (BE)</span></div></div>
+        <div class="ec-row"><span class="ico">🚘</span><div><b>Fahrzeuge aller Epochen</b><span>Limousinen, Sportwagen, Motorräder</span></div></div>
+        <div class="ec-row"><span class="ico">🍽️</span><div><b>Festwirtschaft</b><span>Regionale Angebote & Getränke</span></div></div>
+        <div class="ec-row"><span class="ico">🎠</span><div><b>Für Familien</b><span>Karussell & Unterhaltung</span></div></div>
+        <a href="#kontakt" class="btn btn-primary">Jetzt anmelden</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section videosec" id="video">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Impressionen vom Treffen</span>
+      <h2>Das OiB in Bewegung</h2>
+      <p>Stimmungsvolle Eindrücke vom Oldtimertreffen im historischen Stedtli – Fahrzeuge, Atmosphäre und das Flair von Büren an der Aare.</p>
+    </div>
+    <div class="video-frame reveal">
+      <video id="reel" preload="none" playsinline controls poster="assets/video/reel-poster.jpg">
+        <source src="assets/video/highlight-reel.mp4" type="video/mp4" />
+      </video>
+      <div class="video-play" id="videoPlay"><div class="pbtn"></div></div>
+    </div>
+    <p class="video-cap">Aufnahmen vom OiB – Oldtimer in Büren a.A.</p>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="section highlights" id="highlights">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Was Sie erwartet</span>
+      <h2>Ein Tag voller Höhepunkte</h2>
+      <p>Mehr als nur Autos – das OiB verbindet automobile Leidenschaft mit dem Charme eines historischen Städtchens.</p>
+    </div>
+    <div class="hl-grid">
+      <div class="hl-card reveal"><span class="ico">🚗</span><h3>Fahrzeuge aller Epochen</h3><p>Von klassischen Limousinen über Sportwagen bis hin zu Motorrädern – Vielfalt und Eleganz aus nächster Nähe.</p></div>
+      <div class="hl-card reveal"><span class="ico">🏛️</span><h3>Historisches Stedtli</h3><p>Das malerische Stadtzentrum von Büren an der Aare als einzigartige Kulisse für die Ausstellung.</p></div>
+      <div class="hl-card reveal"><span class="ico">🤝</span><h3>Begegnung & Austausch</h3><p>Ins Gespräch kommen, neue Leute kennenlernen und gemeinsame Leidenschaft teilen.</p></div>
+      <div class="hl-card reveal"><span class="ico">🍽️</span><h3>Festwirtschaft</h3><p>Verschiedene Verpflegungsmöglichkeiten mit regionalen Angeboten und Getränken.</p></div>
+      <div class="hl-card reveal"><span class="ico">🎠</span><h3>Für die ganze Familie</h3><p>Auch für die Kinder ist gesorgt – ein Karussell sorgt für zusätzlichen Spaß.</p></div>
+      <div class="hl-card reveal"><span class="ico">🏆</span><h3>Sonderschau</h3><p>Jedes Jahr besondere Fahrzeuge und Themen im Rahmen einer kuratierten Sonderausstellung.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OK TEAM -->
+<section class="section" id="ok">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Organisationskomitee</span>
+      <h2>Das OK des OiB</h2>
+      <p>Für die Organisation des jährlichen Oldtimertreffens sind folgende Personen verantwortlich.</p>
+    </div>
+    <div class="team-grid">
+      <div class="member reveal"><div class="role">OK-Präsident</div><h3>Michael Poltera</h3><div class="field"><b>Zuständig</b>Bewilligungen, Behörden, Sponsoren, Finanzen, Presse, Web, Werbung</div><div class="hobbies">Hobbys: Fischen, US Cars, BMW e30, Motorsport, Musik</div></div>
+      <div class="member reveal"><div class="role">Technik / Ausstellung</div><h3>Roger Feller</h3><div class="field"><b>Zuständig</b>Sonderschau, Sicherheit, Helferpersonal/Einweiser (ohne Bar), Ausfahrt, Motorsport</div><div class="hobbies">Hobbys: Equipe Bernoise, Motorsport</div></div>
+      <div class="member reveal"><div class="role">Unterhaltung</div><h3>Alexander Maiwald</h3><div class="field"><b>Zuständig</b>Infra Bar, Bühne, Festwirtschaft, Helferpersonal Bar</div><div class="hobbies">Hobbys: Töff, Biken, Wandern</div></div>
+      <div class="member reveal"><div class="role">Sekretärin</div><h3>Julia Kettner</h3><div class="field"><b>Zuständig</b>Anmeldungen, Foto/Video, Adressverwaltung, Social Media</div><div class="hobbies">Hobbys: Autos, Musik, Motorsport, Camping, Fischen</div></div>
+      <div class="member reveal"><div class="role">Bau / Infrastruktur Stedtli</div><h3>Michael Scheurer</h3><div class="field"><b>Zuständig</b>Koordination Werkhof, Restaurants, Ladenlokale, Strom, Wasser, Sanitäre Einrichtungen, Abfall, Attraktionen, Helferanlass</div><div class="hobbies">Hobbys: Autos, Reisen, Motorräder</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VEREIN -->
+<section class="section verein" id="verein">
+  <div class="wrap">
+    <div class="verein-grid">
+      <div class="verein-text reveal">
+        <span class="eyebrow">Der Verein</span>
+        <h2 style="font-size:clamp(2rem,4vw,3rem);margin:0 0 1.2rem">Verein OiB – Oldtimer in Büren a.&nbsp;A.</h2>
+        <p>Der Verein OiB ist in erster Linie entstanden, um das immer umfangreichere Oldtimertreffen besser koordinieren zu können. Der Vorstand besteht aus sechs Mitgliedern.</p>
+      </div>
+      <div class="board reveal">
+        <div class="board-head">🏛️ Der Vorstand</div>
+        <ul>
+          <li><span class="pos">Präsident</span><span class="nm">Michael Scheurer</span></li>
+          <li><span class="pos">Vizepräsident</span><span class="nm">Alexander Maiwald</span></li>
+          <li><span class="pos">Kassier</span><span class="nm">Michael Poltera</span></li>
+          <li><span class="pos">Sekretärin</span><span class="nm">Julia Kettner</span></li>
+          <li><span class="pos">Beisitzer</span><span class="nm">Roger Feller</span></li>
+          <li><span class="pos">Ehrenpräsident & Festredner</span><span class="nm">Bruno Tschopp</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="galerie">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Rückblick & Flyer</span>
+      <h2>Galerie der Jahrgänge</h2>
+      <p>Die Anmelde-Flyer und Plakate der vergangenen Oldtimertreffen – von 2021 bis heute. Bild anklicken zum Vergrössern.</p>
+    </div>
+    <div class="gal-grid" id="galGrid">
+      <div class="gal-item reveal" data-src="assets/flyer-2021.jpg"><img src="assets/flyer-2021.jpg" alt="OiB 2021 Flyer" loading="lazy"><div class="cap">OiB 2021<span class="zoom">⤢</span></div></div>
+      <div class="gal-item reveal" data-src="assets/flyer-2022.jpg"><img src="assets/flyer-2022.jpg" alt="OiB 2022 Flyer" loading="lazy"><div class="cap">OiB 2022<span class="zoom">⤢</span></div></div>
+      <div class="gal-item reveal" data-src="assets/flyer-2023.jpg"><img src="assets/flyer-2023.jpg" alt="OiB 2023 Flyer" loading="lazy"><div class="cap">OiB 2023<span class="zoom">⤢</span></div></div>
+      <div class="gal-item reveal" data-src="assets/flyer-2024.jpg"><img src="assets/flyer-2024.jpg" alt="OiB 2024 Flyer" loading="lazy"><div class="cap">OiB 2024<span class="zoom">⤢</span></div></div>
+      <div class="gal-item reveal" data-src="assets/flyer-2025.jpg"><img src="assets/flyer-2025.jpg" alt="OiB 2025 Flyer" loading="lazy"><div class="cap">OiB 2025<span class="zoom">⤢</span></div></div>
+      <div class="gal-item reveal" data-src="assets/flyer-2026.jpg"><img src="assets/flyer-2026.jpg" alt="OiB 2026 Flyer" loading="lazy"><div class="cap">OiB 2026<span class="zoom">⤢</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="kontakt">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Kontakt & Anmeldung</span>
+      <h2>Dabei sein 2026</h2>
+      <p>Sie möchten Ihren Oldtimer anmelden, haben Fragen zum Treffen oder zur Mitgliedschaft? Schreiben Sie uns – wir melden uns gerne zurück.</p>
+      <div class="ci-row"><span class="ico">✉️</span><div><b>E-Mail</b><a href="mailto:info@o-i-b.ch">info@o-i-b.ch</a></div></div>
+      <div class="ci-row"><span class="ico">📍</span><div><b>Veranstaltungsort</b><span>Historisches Stedtli, Büren an der Aare (BE)</span></div></div>
+      <div class="ci-row"><span class="ico">📅</span><div><b>Nächster Anlass</b><span>6. September 2026, 9–17 Uhr</span></div></div>
+      <div class="ci-social">
+        <a href="http://instagram.com/oib_oldtimer_in_bueren_a.a" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1GnoDhr2SV/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <h3>Nachricht senden</h3>
+      <p class="fc-sub">Alle Felder ausfüllen – Ihre Nachricht erreicht uns direkt unter info@o-i-b.ch.</p>
+      <form id="contactForm" autocomplete="off">
+        <div class="field-row">
+          <div class="fg"><label for="name">Name *</label><input type="text" id="name" name="name" maxlength="200" required></div>
+          <div class="fg"><label for="email">E-Mail *</label><input type="email" id="email" name="email" maxlength="200" required></div>
+        </div>
+        <div class="fg"><label for="subject">Betreff</label><input type="text" id="subject" name="subject" maxlength="200" placeholder="z.B. Anmeldung Oldtimer 2026"></div>
+        <div class="fg"><label for="message">Nachricht *</label><textarea id="message" name="message" maxlength="5000" required placeholder="Ihre Nachricht, Fahrzeug-Angaben oder Frage …"></textarea></div>
+        <div class="cf-hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <button type="submit" class="btn btn-dark" id="submitBtn">Nachricht senden →</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/oib-logo.png" alt="OiB">
+          <div><div class="ft">OiB</div><div class="fs">Oldtimer in Büren a.A.</div></div>
+        </div>
+        <p>Das jährliche Oldtimertreffen im historischen Stedtli von Büren an der Aare. Nostalgie, automobiler Charme und ein entspannter Tag für die ganze Familie.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigation</h4>
+        <a href="#treffen">Das Treffen</a>
+        <a href="#video">Video</a>
+        <a href="#ok">Organisation</a>
+        <a href="#verein">Der Verein</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <a href="mailto:info@o-i-b.ch">info@o-i-b.ch</a>
+        <a href="http://instagram.com/oib_oldtimer_in_bueren_a.a" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1GnoDhr2SV/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Verein OiB – Oldtimer in Büren a.A. · Alle Rechte vorbehalten.</span>
+      <span>Design &amp; Entwicklung Webseite / N. Kolica / <a href="https://www.kolica.ch" target="_blank" rel="noopener">www.kolica.ch</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Schliessen">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Zurück">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Weiter">›</button>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// header scroll state
+const header = document.getElementById('header');
+const onScroll = () => {
+  if (window.scrollY > 40){ header.classList.remove('top'); header.classList.add('navbar-bg'); }
+  else { header.classList.add('top'); header.classList.remove('navbar-bg'); }
+};
+window.addEventListener('scroll', onScroll); onScroll();
+
+// mobile menu
+const burger = document.getElementById('burger'), navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => { burger.classList.toggle('open'); navLinks.classList.toggle('open'); });
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { burger.classList.remove('open'); navLinks.classList.remove('open'); }));
+
+// reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// highlight reel play
+const reel = document.getElementById('reel'), videoPlay = document.getElementById('videoPlay');
+videoPlay.addEventListener('click', () => { videoPlay.classList.add('hidden'); reel.play(); });
+reel.addEventListener('pause', () => { if(!reel.ended) videoPlay.classList.remove('hidden'); });
+reel.addEventListener('play', () => videoPlay.classList.add('hidden'));
+
+// lightbox
+const items = [...document.querySelectorAll('.gal-item')];
+const srcs = items.map(i => i.dataset.src);
+const caps = items.map(i => i.querySelector('.cap').childNodes[0].textContent.trim());
+const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg');
+let idx = 0;
+function showLb(i){ idx = (i + srcs.length) % srcs.length; lbImg.src = srcs[idx]; lbImg.alt = caps[idx]; lb.classList.add('open'); }
+items.forEach((it,i)=> it.addEventListener('click',()=>showLb(i)));
+document.getElementById('lbClose').addEventListener('click',()=>lb.classList.remove('open'));
+document.getElementById('lbNext').addEventListener('click',e=>{e.stopPropagation();showLb(idx+1);});
+document.getElementById('lbPrev').addEventListener('click',e=>{e.stopPropagation();showLb(idx-1);});
+lb.addEventListener('click',e=>{ if(e.target===lb) lb.classList.remove('open'); });
+document.addEventListener('keydown',e=>{
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')lb.classList.remove('open');
+  if(e.key==='ArrowRight')showLb(idx+1);
+  if(e.key==='ArrowLeft')showLb(idx-1);
+});
+
+// contact form
+const form = document.getElementById('contactForm'), status = document.getElementById('formStatus'), btn = document.getElementById('submitBtn');
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  status.className = 'form-status'; status.textContent = '';
+  const payload = { name: form.name.value.trim(), email: form.email.value.trim(), subject: form.subject.value.trim(), message: form.message.value.trim(), website: form.website.value };
+  if(!payload.name || !payload.email || !payload.message){ status.className='form-status err'; status.textContent='Bitte füllen Sie Name, E-Mail und Nachricht aus.'; return; }
+  btn.disabled = true; const old = btn.textContent; btn.textContent = 'Senden …';
+  try{
+    const r = await fetch('/api/contact', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
+    const data = await r.json();
+    if(r.ok && data.ok){ status.className='form-status ok'; status.textContent = data.message || 'Danke! Ihre Nachricht wurde gesendet.'; form.reset(); }
+    else { status.className='form-status err'; status.textContent = data.error || 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.'; }
+  }catch(err){ status.className='form-status err'; status.textContent='Verbindung fehlgeschlagen. Bitte später erneut versuchen oder direkt an info@o-i-b.ch schreiben.'; }
+  finally{ btn.disabled=false; btn.textContent=old; }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[Unit]
+Description=OiB Kontaktformular Backend (Flask)
+After=network.target
+
+[Service]
+Type=simple
+User=neo
+WorkingDirectory=/home/neo/oib/contact
+Environment=OIB_CONTACT_PORT=5055
+ExecStart=/home/neo/oib/contact/venv/bin/python /home/neo/oib/contact/app.py
+Restart=on-failure
+RestartSec=5
+# Optionale SMTP-Konfig; '-' = kein Fehler wenn die Datei (noch) fehlt
+EnvironmentFile=-/home/neo/oib/contact/.env
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# Python venvs
+videnv/
+contact/venv/
+**/__pycache__/
+*.pyc
+
+# Secrets (nie committen — nur .env.example gehört ins Repo)
+contact/.env
+.env
+
+# Roh-/Arbeitsdateien des Video-Schnitts (gross, nicht Teil des Deliverables)
+video/source.mp4
+video/thumbs/
+video/contact_sheet.jpg
+video/hero-loop.mp4
+video/hero-loop.webm
+video/highlight-reel.mp4
+video/hero-poster.jpg
+video/reel-poster.jpg
+
+# Laufzeit
+contact/messages.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
